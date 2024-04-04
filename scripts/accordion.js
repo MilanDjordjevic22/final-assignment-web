@@ -3,10 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     for (var i = 0; i < accordions.length; i++) {
         accordions[i].addEventListener("click", function() {
-            // Toggles the "active" class on the button
             this.classList.toggle("active");
 
-            // Toggle the icon from down to up, and vice versa
             var icon = this.querySelector('i');
             if (icon.classList.contains('fa-chevron-down')) {
                 icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
@@ -14,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
             }
 
-            // Toggles the display of the panel
             var panel = this.nextElementSibling;
             if (panel.style.display === "block") {
                 panel.style.display = "none";
