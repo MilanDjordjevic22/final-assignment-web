@@ -21,7 +21,7 @@
     <main>
 
         <!-- Weather Menu -->
-    <div class="weather-section">
+    <section class="weather-section">
         <select id="citySelector" class="weather-control">
             <option value="Calgary">Calgary</option>
             <option value="Vancouver">Vancouver</option>
@@ -30,7 +30,7 @@
         <button id="getWeatherBtn" class="weather-control">Get Weather</button>
         <!-- API weather display -->
         <div id="weatherDisplay"></div>
-    </div>
+    </section>
 
     <!-- Content section -->
     <section class="content-section">
@@ -110,7 +110,10 @@
         <p>© 2024 Portfolio Template. All rights reserved.</p>
     </footer>
 
-    <script src="scripts/accordion.js"></script>
+    <!-- Scripts -->
+    <script src="scripts/accordion.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
 </body>
 
 </html>

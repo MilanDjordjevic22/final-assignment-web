@@ -1,7 +1,4 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Lines&family=Rubik+Mono+One&display=swap');
-
 
 /* Basic Body Styling */
 body {
@@ -65,6 +62,63 @@ main h2 {
     font-weight: 400;
     font-style: normal;
     font-size: 1.5rem;
+}
+
+/* Weather Section Styling */
+.weather-section {
+    text-align: right;
+    padding: 20px;
+}
+
+.weather-control {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    border: 1px solid transparent;
+}
+
+#citySelector {
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}
+
+#getWeatherBtn {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#getWeatherBtn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+#weatherDisplay {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.weather-control {
+    width: 120px;
+    box-sizing: border-box;
+}
+
+#weatherDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.weather-card {
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white; 
 }
 
 /* About Section Styling */
