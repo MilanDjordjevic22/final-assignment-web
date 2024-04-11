@@ -22,7 +22,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff;
+    color: #1b021f;
     position: relative;
 }
 
@@ -42,7 +42,7 @@ h1 {
     font-family: "Rubik Mono One", monospace;
     font-weight: 400;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 h3, p, a, button {
     font-family: "Montserrat", sans-serif;
@@ -78,8 +78,8 @@ main h2 {
 }
 
 #citySelector {
-    background-color: grey;
-    color: white;
+    background-color: rgb(214, 213, 213);
+    color: rgb(19, 3, 23);
     cursor: pointer;
 }
 
@@ -97,7 +97,7 @@ main h2 {
 
 #weatherDisplay {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .weather-control {
@@ -109,7 +109,7 @@ main h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 10px;
 }
 
@@ -203,12 +203,13 @@ main h2 {
 
 /* Accordion Buttons */
 .accordion-section .accordion {
-    background-color: grey;
-    color: white;
+    background-color: rgb(217, 217, 218);
+    color: rgb(0, 0, 0);
     padding: 15px; 
     width: 100%;
     text-align: left; 
     font-size: 1rem;
+    font-weight: 500;
     border: none; 
     outline: none; 
     cursor: pointer; 
@@ -217,7 +218,8 @@ main h2 {
 
 /* Hover Effect for Accordion */
 .accordion-section .accordion:hover {
-    background-color: darkgrey; 
+    background-color: rgb(17, 2, 18); 
+    color: white;
 }
 
 /* Accordion Panels */
@@ -234,7 +236,7 @@ footer {
     text-align: center;
     padding: 20px;
 }
-footer h1 {
+footer h2 {
     font-size: 2rem;
 }
 
