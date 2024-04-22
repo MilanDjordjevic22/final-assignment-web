@@ -1,19 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Lines&family=Rubik+Mono+One&display=swap');
-
-/* Basic Body Styling */
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
 
 /* Hero Banner Styling */
 .hero-banner {
-    background-image: url('../assets/hero.jpg');
+    background-image: url('../assets/ms_hero_banner.png');
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -33,166 +21,69 @@ body {
 }
 .hero-banner h2 {
     padding-top: 25px;
-    font-family: "Montserrat Subrayada", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 2rem;
 }
-h1 {
-    font-family: "Rubik Mono One", monospace;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3.5rem;
-}
-h3, p, a, button {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-/* Main Heading Styling */
-main h2 {
-    background-color: black;
-    color: white;
-    padding: 2px;
-    text-align: left;
-    padding: 20px 20px;
-    font-family: "Rubik Mono One", monospace;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
-}
-
-/* Weather Section Styling */
-.weather-section {
-    text-align: right;
-    padding: 20px;
-}
-
-.weather-control {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 10px;
-    border: 1px solid transparent;
-}
-
-#citySelector {
-    background-color: rgb(214, 213, 213);
-    color: rgb(19, 3, 23);
-    cursor: pointer;
-}
-
-#getWeatherBtn {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-}
-
-#getWeatherBtn:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-}
-
-#weatherDisplay {
-    margin-top: 10px;
-    font-size: 18px;
-}
-
-.weather-control {
-    width: 120px;
-    box-sizing: border-box;
-}
-
-#weatherDisplay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.weather-card {
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
-    border-radius: 10px;
-    background-color: white; 
-}
 
 /* About Section Styling */
-.content-about {
-    padding: 20px;
+.about-us-content {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
 }
-.content-about h2 {
+
+.iframe-container {
+    max-width: 70%;
+    margin: 0 auto;  
+    position: relative;
+    padding-top: 42.85%; 
+    height: 0;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-}
-
-/* About Me Content Layout */
-.about-me-content {
-    overflow: hidden;
-}
-
-/* About Text and Image Styling */
-.about-text {
-    float: right;
-    width: 60%;
-    margin: 0 5%;
-}
-.about-profile-image {
-    float: left;
-    width: 20%;
-    height: auto;
-    margin-left: 10%;
-}
-
-.content-goals p {
-    margin: 10px;
+    height: 100%;
 }
 
 /* Card Section Layout */
-.card-section .all-cards {
+.services-section {
+    text-align: center;
+}
+
+.all-cards {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
-.card-section .all-cards > div {
-    flex: 1;
-    min-width: 250px;
-    max-width: calc(33.333% - 20px);
+
+.all-cards .card-1, .all-cards .card-2, .all-cards .card-3 {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 20px;
+    overflow: hidden;
 }
 
-/* Card Image Styling */
-.card-section img {
+.all-cards img {
     width: 100%;
-    height: auto;
+    height: 200px;
     object-fit: cover;
-    border-radius: 8px;
 }
 
-/* Education Section Heading Styling */
-.education-section h3 {
-    text-align: left;
-    padding-left: 20px;
-    margin: 0 auto 20px auto;
+.all-cards h3, .all-cards p {
+    text-align: center;
 }
 
-/* Education Video Styling */
-.education-section .education-video {
-    width: 70%;
-    margin: 0 auto;
-}
-.education-section .education-video iframe {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
+.all-cards p {
+    margin-top: auto;
 }
 
 /* Accordion Container */
@@ -203,9 +94,9 @@ main h2 {
 
 /* Accordion Buttons */
 .accordion-section .accordion {
-    background-color: rgb(217, 217, 218);
+    background-color: #f4f4f4;
     color: rgb(0, 0, 0);
-    padding: 15px; 
+    padding: 15px 15px 15px 30px; 
     width: 100%;
     text-align: left; 
     font-size: 1rem;
@@ -218,49 +109,15 @@ main h2 {
 
 /* Hover Effect for Accordion */
 .accordion-section .accordion:hover {
-    background-color: rgb(17, 2, 18); 
-    color: white;
+    background-color: white; 
+    color: #0000ff;
 }
 
 /* Accordion Panels */
 .accordion-section .panel {
     display: none; 
     overflow: hidden;
-    padding: 15px;
-}
-
-/* Footer Styling */
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-footer h2 {
-    font-size: 2rem;
-}
-
-/* Footer Link Styling */
-footer a {
-    color: white;
-    text-decoration: none;
-
-}
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Contact Info Layout */
-.contact-info {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 20px 20%;
-}
-.contact-info p, .contact-info a {
-    flex: 1;
-    margin: 10px;
+    padding: 10px 10px 10px 30px;
 }
 
 /* Responsive Adjustments for Hero Banner */

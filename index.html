@@ -7,93 +7,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Milan Djordjevic">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
-    <title>Basic Portfolio Template</title>
+    <link rel="stylesheet" type="text/css" href="styles/generalstyles.css">
+    <title>Meticulous Services Home</title>
 </head>
 
 <body>
 
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/logo.png" alt="Meticulous services logo that is yellow oval with text inside" class="logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
     <!-- Hero banner -->
     <div class="hero-banner">
-        <h1>Milan Djordjevic</h1>
-        <h2>Web Developer</h2>
+        <h1>Meticulous Services</h1>
+        <h2>Quality Moving Services</h2>
     </div>
 
     <main>
 
-        <!-- Weather Menu -->
-    <section class="weather-section">
-        <label for="citySelector">Select a city:</label>
-        <select id="citySelector" class="weather-control">
-            <option value="Calgary">Calgary</option>
-            <option value="Vancouver">Vancouver</option>
-            <option value="Toronto">Toronto</option>
-        </select>
-        <button id="getWeatherBtn" class="weather-control">Get Weather</button>
-        <!-- API weather display -->
-        <div id="weatherDisplay"></div>
-    </section>
-
     <!-- Content section -->
     <section class="content-section">
-            <h2>About Me</h2>
-            <div class="about-me-content">
-                <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Sed sit amet sem varius, gravida enim nec, varius nunc. Curabitur ullamcorper id lectus porta dapibus. Integer non lorem lacus. Fusce porttitor, sapien nec viverra vestibulum, ligula felis ornare nibh, in vehicula velit nisl non nisi. Vivamus eget nibh vitae elit consequat auctor. Duis nec nisi commodo, aliquam felis quis, tempus sapien. Mauris accumsan, massa non consectetur feugiat, diam est gravida odio, nec egestas dolor justo et nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut et feugiat lorem.</p>  
-                <img src="assets/pexels-emre-keshavarz-3501159.jpg" alt="Open-source portfolio image of man sitting on table in a suit" class="about-profile-image">  
+            <h2>About Us</h2>
+            <div class="about-us-content">
+                <p class="about-text">Choose Meticulous Services for a perfect move in Calgary. We focus on quality and efficiency, so you can relax and enjoy a completely stress-free transition to your new home.</p>  
+                <!-- Added div for iframe to make it responsive -->
+                <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/e3UyFOJ5d3M?si=C_c4NrYuUnprOIV5&amp;start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>  
             </div>
-        <div class="content-goals">
-            <h2>Goals</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </section>
-    
-    <!-- Card section -->
-    <section class="card-section">
-        <h2>Projects</h2>
-        <div class="all-cards">
-            <div class="card-1">
-                <h3>Project 1</h3>
-                <img src="assets/Card_1_Image.jpg" alt="Astronaut looking at mountains and stars">
-                <p>Card content goes here...</p>
-            </div>
-            <div class="card-2">
-                <h3>Project 2</h3>
-                <img src="assets/Card_2_Image.jpg" alt="Galaxy with butterflies and astronaut">
-                <p>Card content goes here...</p>
-            </div>
-            <div class="card-3">
-                <h3>Project 3</h3>
-                <img src="assets/Card_3_Image.png" alt="Meticulous services logo">
-                <p>Card content goes here...</p>
-            </div>
-        </div>
     </section>
 
-    <!-- Embedded video -->
-    <section class="education-section">
-        <h2>Education</h2>
-        <h3>Interactive Design - Web Design and Development Major</h3>
-        <div class="education-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/eWYBL-rMfvI?si=Z73dGJXw97JahMh1&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+    <!-- Services section -->
+    <section class="services-section">
+        <h2>Services</h2>
+        <!-- Card section -->
+        <section class="all-cards">
+            <div class="card-1">
+                <h3>Apartment Moving</h3>
+                <img src="assets/ms_apartment.png" alt="Tall apartment building point of view from down">
+                <p>Count on us for top-notch apartment moving solutions that promise convenience and reliability.</p>
+            </div>
+            <div class="card-2">
+                <h3>House Moving</h3>
+                <img src="assets/ms_house.png" alt="A beige house with a sale sign outside">
+                <p>We excel in house moving services, ensuring your household belongings are safely relocated to your new home.</p>
+            </div>
+            <div class="card-3">
+                <h3>Packing</h3>
+                <img src="assets/ms_packing.png" alt="A man packing up belongings into a cardboard box">
+                <p>Our professional packing solutions are designed to ensure that every item is securely packed for safe transport.</p>
+            </div>
+        </section>
     </section>
+    
 
     <!-- Accordion -->
     <section class="accordion-section">
-        <h2>Hobbies</h2>
+        <h2>Frequently Asked Questions</h2>
         <!-- Accordion item 1 -->
         <div class="accordion-1">
-            <button class="accordion">Hobby 1<i class="fa-solid fa-chevron-down"></i></button>
+            <button class="accordion">What payment methods are accepted?<i class="fa-solid fa-chevron-down"></i></button>
             <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>We accept a variety of payment methods, including major credit cards, bank transfers, and cash, to accommodate your needs and ensure convenience.</p>
             </div>
         </div>
         
         <!-- Accordion item 2 -->
         <div class="accordion-2">
-            <button class="accordion">Hobby 2<i class="fa-solid fa-chevron-down"></i></button>
+            <button class="accordion">What is the cancellation policy?<i class="fa-solid fa-chevron-down"></i></button>
             <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Our cancellation policy allows you to cancel your booking up to 24 hours before your scheduled move without any penalty, ensuring flexibility and peace of mind.</p>
+            </div>
+        </div>
+
+        <!-- Accordion item 3 -->
+        <div class="accordion-3">
+            <button class="accordion">Do you move pianos and hot tubs?<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+                <p>Yes, we specialize in safely moving large and delicate items such as pianos and hot tubs, ensuring they reach your new location in perfect condition.</p>
             </div>
         </div>
     </section>
@@ -102,18 +102,33 @@
 
     <!-- Footer -->
     <footer>
-        <h2>Contact Me</h2>
-        <div class="contact-info">
-            <a href="about:blank" class="linkedin-link">LinkedIn</a>
-            <p>Phone: 123-456-7890</p>
-            <p>Email: myname@hotmail.com</p>
+        <div class="footer-container"> 
+            <div class="site-options">
+                <h3>Meticulous Services</h3>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: meticulousservices@gmail.com</p>
+                <p>1234 Main Street</p>
+                <p>Calgary, Alberta A1B 2C3</p>
+            </div>
+            <div class="business-location">
+                <div id="map" style="height:400px; width:100%;"></div>
+            </div>
         </div>
-        <p>© 2024 Portfolio Template. All rights reserved.</p>
+        <p class="footer-credits">© 2024 Meticulous Services. All rights reserved.</p>
     </footer>
+
 
     <!-- Scripts -->
     <script src="scripts/accordion.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/map.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+
+
 
 </body>
 

@@ -1,0 +1,74 @@
+
+/* Form Container Styling */
+.contact-form-container {
+    width: 100%;
+    max-width: 700px;  
+    margin: 0 auto;  
+    padding: 20px 20px 60px 20px;
+    box-sizing: border-box;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Form Styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;  
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;  
+    height: 150px;
+}
+
+/* Button Styling */
+.submit-btn {
+    background-color: #ffff00; 
+    color: black;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e6b800;  
+}
+
+/* Popup Message Styling */
+#popup-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background: white;
+    color: #0000ff;
+    border: 1px solid #ccc;
+    padding: 40px;
+    z-index: 1000;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 400px;
+}
